@@ -1,0 +1,3 @@
+# Rust Iterator Gotcha
+
+This repository demonstrates a subtle error that can occur when using iterators in Rust.  The code in `bug.rs` attempts to access elements beyond the end of an iterator. This does *not* cause a panic, but rather results in `None` being returned after all elements have been consumed. The `bugSolution.rs` file shows how to handle this gracefully.  This is a common pitfall for beginners learning Rust's iterator system.
